@@ -82,13 +82,13 @@ function App() {
     <div className="bg-gray-300">
       {/* Header */}
       <header className="bg-blue-600 p-6  text-white text-center">
-        <h1>Planeación Estratégica</h1>
+        <h1 className="text-xl font-bold">Planeación Estratégica</h1>
       </header>
 
       <div className="container mx-auto p-6">
         {/* Introducción */}
         <section className="p-6">
-          <h1 className="text-xl font-bold text-center">Introducción</h1>
+          <h1 className="text-xl font-bold text-center m-4">Introducción</h1>
           <p className="text-center">
             Los Galaxy Buds3 Pro ofrecen una experiencia de audio premium con
             cancelación de ruido adaptativa, un diseño ergonómico y una calidad
@@ -98,11 +98,11 @@ function App() {
           </p>
         </section>
 
-        <h1 className="text-xl font-bold">1. Diagnóstico Actual</h1>
+        <h1 className="p-6 text-xl font-bold">1. Diagnóstico Actual</h1>
         {/* Diagnóstico Actual (DOFA) */}
         <section className="p-6 grid grid-cols-2 gap-4">
           {swotData.map((category) => (
-            <div key={category.type} className="border p-4">
+            <div key={category.type} className="rounded shadow-md border p-5">
               <h3 className="font-bold">{category.type}</h3>
               <ul>
                 {category.items.map((item, index) => (
@@ -169,7 +169,6 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-gray-800 p-4 text-white text-center">
-        <p>© 2024 Planeación Estratégica</p>
         <p>&copy; 2024 By Cristian Chavez Sarmiento. All rights reserved.</p>
         <p>
           Galaxy Buds3 Pro is a registered trademark of Samsung Electronics Co.,
